@@ -11,4 +11,5 @@ import com.org.isetn.entities.Etudiant;
 public interface EtudiantRepository extends JpaRepository<Etudiant, Long> {
 	
 	public List<Etudiant> findByNomContains(String nom); 
+	 List<Etudiant> findByClasseCodClass(Long codClass);
 }
